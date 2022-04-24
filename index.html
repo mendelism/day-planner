@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <h2 id="currentDay"></h2>
+      <h2 id="currentTime"></h2>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>9AM</h3>
+        </div>
+        <textarea class="col-8" id="nine" data-input-time="9"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="9"><i class="material-symbols-outlined" data-btn-time="9">save</i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>10AM</h3>
+        </div>
+        <textarea class="col-8" id="ten" data-input-time="10"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="10"><i class="material-symbols-outlined" data-btn-time="10">save</i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>11AM</h3>
+        </div>
+        <textarea class="col-8" id="eleven" data-input-time="11"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="11"><i class="material-symbols-outlined" data-btn-time="11">save</i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>12PM</h3>
+        </div>
+        <textarea class="col-8" id="twelve" data-input-time="12"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="12"><i class="material-symbols-outlined" data-btn-time="12">save</i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>1PM</h3>
+        </div>
+        <textarea class="col-8" id="one" data-input-time="13"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="13"><i class="material-symbols-outlined" data-btn-time="13">save</i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>2PM</h3>
+        </div>
+        <textarea class="col-8" id="two" data-input-time="14"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="14"><i class="material-symbols-outlined" data-btn-time="14">save</i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>3PM</h3>
+        </div>
+        <textarea class="col-8" id="three" data-input-time="15"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="15"><i class="material-symbols-outlined" data-btn-time="15">save</i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>4PM</h3>
+        </div>
+        <textarea class="col-8" id="four" data-input-time="16"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="16"><i class="material-symbols-outlined" data-btn-time="16">save</i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>5PM</h3>
+        </div>
+        <textarea class="col-8" id="five" data-input-time="17"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="17"><i class="material-symbols-outlined" data-btn-time="17">save</i></button>
+      </div>
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-end hour">
+          <h3>6PM</h3>
+        </div>
+        <textarea class="col-8" id="six" data-input-time="18"></textarea>
+        <button class="col-2 saveBtn" data-btn-time="18"><i class="material-symbols-outlined" data-btn-time="18">save</i></button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
